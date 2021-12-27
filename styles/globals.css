@@ -1,9 +1,9 @@
-html,
+html {
+  scroll-behavior: smooth;
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 a {
@@ -13,4 +13,374 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* index Page css */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url('../public/images/banner.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex !important;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s ease;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  border: 1px solid #fff !important;
+  color: #fff;
+  padding: 12px 34px !important;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+nav .fas {
+  display: none;
+}
+
+/* .sticky {
+  background-color: orange;
+  z-index: 200;
+  width: inherit;
+  position: fixed;
+} */
+nav {
+  position: sticky;
+  top: -1px; /* ➜ the trick */
+  width: inherit;
+  padding: 1em;
+  padding-top: calc(1em + 1px); /* ➜ compensate for the trick */
+
+  /* background: salmon; */
+  transition: 0.1s;
+  z-index: 9999;
+}
+
+nav.isSticky {
+  background: salmon;
+  z-index: 9999;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 8500px;
+    text-align: left;
+    z-index: 2;
+  }
+  nav .fas {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+.course {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.about {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.about-cols {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-rows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  min-width: 500px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-names {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 923px) {
+  .about-rows {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-names {
+    max-width: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .item {
+    min-width: 296px;
+  }
+  .row {
+    flex-direction: column;
+    max-width: 296px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-names {
+    margin-right: 0px;
+  }
+}
+
+#more {
+  display: none;
+}
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+#more4 {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,
+a {
+  color: #fff;
+}
+footer .content .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+footer .content p {
+  text-align: justify;
+}
+footer .content .lower .topic {
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i {
+  padding-right: 16px;
+}
+footer .content .middle {
+  padding-left: 80px;
+}
+footer .content .middle a {
+  line-height: 32px;
+}
+footer .content .right input[type='text'] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type='submit'] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type='submit']:hover {
+  background: none;
+  color: #eb2f06;
+}
+footer .content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover {
+  border-color: #eb2f06;
+}
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a {
+  color: #eb2f06;
+}
+footer a {
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: #eb2f06;
+}
+@media (max-width: 1100px) {
+  footer .content .middle {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 950px) {
+  footer .content .box {
+    width: 50%;
+  }
+  .content .right {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 560px) {
+  footer {
+    position: relative;
+  }
+  footer .content .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle {
+    padding-left: 0;
+  }
 }
