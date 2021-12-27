@@ -56,7 +56,7 @@ export default function Home() {
             Welcome to Yoga Anga, where we invite you to explore and deepen your
             yoga practice, discover your own magic, heal, recharge, relax, learn
             and thrive!
-            <br /> We&apos;re dedicated to making yoga available to everyone
+            <br /> We’re dedicated to making yoga available to everyone
             regardless of their size, shape, or bank accounts. Join our
             positive, diverse community today.
           </p>
@@ -79,18 +79,17 @@ export default function Home() {
             <div>
               <h1>About Us</h1>
               <p style={{ lineHeight: '2em' }}>
-                In today&apos;s fast-paced world, our lifestyle hampers our
-                body&apos;s well-being by accumulating toxins. This results in
-                creation of stress, diseases and illnesses, which deteriorates
-                one&apos;s health. This is where the Yoga Anga comes into effect
-                and has proven to be important for our body and mind. Yoga Anga
-                is a sacred haven for everyone who wants to embark on a life
-                changing journey. We welcome all students and offer a variety of
-                yoga, meditations, training, courses, workshops and other
-                healing modalities to support and deepen your practice. Yoga
-                Anga offers many physical and mental health and wellness
-                programs, with a curriculum designed to meet the needs of
-                everyone.
+                In today’s fast-paced world, our lifestyle hampers our body’s
+                well-being by accumulating toxins. This results in creation of
+                stress, diseases and illnesses, which deteriorates one’s health.
+                This is where the Yoga Anga comes into effect and has proven to
+                be important for our body and mind. Yoga Anga is a sacred haven
+                for everyone who wants to embark on a life changing journey. We
+                welcome all students and offer a variety of yoga, meditations,
+                training, courses, workshops and other healing modalities to
+                support and deepen your practice. Yoga Anga offers many physical
+                and mental health and wellness programs, with a curriculum
+                designed to meet the needs of everyone.
               </p>
             </div>
           </div>
@@ -119,7 +118,7 @@ export default function Home() {
       <section className='course'>
         <h1>FIND WHAT MOVES YOU</h1>
         <p>
-          Whether you&apos;re a complete beginner or you want to step up your
+          Whether you’re a complete beginner or you want to step up your
           routine, get the full studio experience at home with thousands of
           classes for body, mind, and spirit.
         </p>
@@ -139,8 +138,8 @@ export default function Home() {
               <span id='more1'>
                 nner, or have tried yoga in the past and are ready to really get
                 going, these classes will pave the way. These beginners class is
-                designed for everyone and for everybody, so there&apos;s no need
-                to be wary if you have no previous yoga experience.
+                designed for everyone and for everybody, so there’s no need to
+                be wary if you have no previous yoga experience.
               </span>
               <b
                 style={{
@@ -173,9 +172,8 @@ export default function Home() {
                 It concentrates on the third (Asana) and fourth (Pranayama) limb
                 in the Eight Limbs of Yoga. Hatha Yoga focuses on breathing and
                 postures which are held for a while to benefit from their
-                healing power. Because Hatha yoga&apos;s pace is slow and
-                gentle, it is an ideal starting place for people who are new to
-                yoga.
+                healing power. Because Hatha yoga’s pace is slow and gentle, it
+                is an ideal starting place for people who are new to yoga.
               </span>
               <b
                 style={{
@@ -251,7 +249,7 @@ export default function Home() {
             <h3>ONLINE YOGA CLASSES</h3>
             <p>
               yoga allows you to select the time of the day that suits you to
-              practice. Whether you&apos;re a morning bird or a night owl,
+              practice. Whether you’re a morning bird or a night owl,
               <span id='dots4'>...</span>
               <span id='more4'>
                 the ability to roll out your mat at any given time offers a
