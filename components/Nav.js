@@ -4,14 +4,14 @@ import Link from 'next/link';
 const Nav = () => {
   useEffect(() => {
     if (typeof window !== undefined) {
-      const stickyElm = document.querySelector('nav');
-
-      const observer = new IntersectionObserver(
-        ([e]) => e.target.classList.toggle('isSticky', e.intersectionRatio < 1),
-        { threshold: [1] }
-      );
-
-      observer.observe(stickyElm);
+      var elmnt = document.getElementById('navbar');
+      window.onscroll = function () {
+        if (window.innerHeight + window.scrollY > document.body.offsetHeight) {
+          elmnt.classList.add('isSticky');
+        } else {
+          elmnt.classList.remove('isSticky');
+        }
+      };
     }
   });
   const hideMenu = () => {

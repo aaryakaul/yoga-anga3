@@ -26,6 +26,7 @@ a {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav {
@@ -106,14 +107,8 @@ nav .fas {
   display: none;
 }
 
-/* .sticky {
-  background-color: orange;
-  z-index: 200;
-  width: inherit;
-  position: fixed;
-} */
 nav {
-  position: sticky;
+  position: fixed;
   top: -1px; /* ➜ the trick */
   width: inherit;
   padding: 1em;
