@@ -10,7 +10,7 @@ function Footer() {
             <div className='lower'>
               <div className='topic'>Contact us</div>
               <div className='phone'>
-                <a href='tel:+9184016854567'>
+                <a href='tel:84016854567'>
                   <i className='fas fa-phone-volume'></i>+91 84016854567
                 </a>
               </div>
