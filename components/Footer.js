@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -9,13 +10,13 @@ function Footer() {
             <div className='lower'>
               <div className='topic'>Contact us</div>
               <div className='phone'>
-                <a href='#'>
-                  <i className='fas fa-phone-volume'></i>+007 9089 6767
+                <a href='tel:+9184016854567'>
+                  <i className='fas fa-phone-volume'></i>+91 84016854567
                 </a>
               </div>
               <div className='email'>
-                <a href='#'>
-                  <i className='fas fa-envelope'></i>abc@gmail.com
+                <a href='mailto: aaryakaul07@gmail.com'>
+                  <i className='fas fa-envelope'></i>aaryakaul07@gmail.com
                 </a>
               </div>
             </div>
@@ -23,65 +24,76 @@ function Footer() {
           <div className='middle box'>
             <div className='topic'>Our Services</div>
             <div>
-              <a href='#'>Yoga for beginners</a>
+              <Link href='/services/#onlineyogaclasses'>
+                <a>Online Yoga Classes</a>
+              </Link>
             </div>
             <div>
-              <a href='#'>Yoga for weight loss</a>
+              <Link href='/services/#yogaforbeginners'>
+                <a>Yoga For beginners</a>
+              </Link>
+            </div>{' '}
+            <div>
+              <Link href='/services/#hathyoga'>
+                <a>Hatha Yoga</a>
+              </Link>
+            </div>{' '}
+            <div>
+              <Link href='/services/#onlineyogaclasses'>
+                <a>Online Yoga Classes</a>
+              </Link>
+            </div>{' '}
+            <div>
+              <Link href='/services/#privateyogaclasses'>
+                <a>Private Yoga Classes</a>
+              </Link>
+            </div>{' '}
+            <div>
+              <Link href='/services/#corporateyoga'>
+                <a>Corporate Yoga</a>
+              </Link>
+            </div>{' '}
+            <div>
+              <Link href='/services/#kidsyoga'>
+                <a>Kids yoga</a>
+              </Link>
+            </div>{' '}
+            <div>
+              <Link href='/services/#pregnancyyoga'>
+                <a>Pregnancy Yoga</a>
+              </Link>
             </div>
             <div>
-              <a href='#'>Hatha Yoga</a>
+              <Link href='/services/#meditation'>
+                <a>Meditation</a>
+              </Link>
             </div>
             <div>
-              <a href='#'>Vinayasa yoga</a>
-            </div>
-            <div>
-              <a href='#'>Fitness yoga</a>
-            </div>
-            <div>
-              <a href='#'>Asthangana yoga</a>
-            </div>
-            <div>
-              <a href='#'>Power yoga</a>
-            </div>
-            <div>
-              <a href='#'>Yin yoga</a>
-            </div>
-            <div>
-              <a href='#'>Corporate yoga</a>
-            </div>
-            <div>
-              <a href='#'>Zumba/Aerobics</a>
+              <Link href='/services/#pranayama'>
+                <a>Pranayama</a>
+              </Link>
             </div>
           </div>
           <div className='right box'>
-            <div className='topic'>Subscribe us</div>
-            <form action='#'>
-              <input type='text' placeholder='Enter email address' />
-              <input type='submit' name='' value='Send' />
-              <div className='media-icons'>
-                <a href='#'>
-                  <i className='fab fa-facebook-f'></i>
-                </a>
-                <a href='#'>
-                  <i className='fab fa-instagram'></i>
-                </a>
-                <a href='#'>
-                  <i className='fab fa-twitter'></i>
-                </a>
-                <a href='#'>
-                  <i className='fab fa-youtube'></i>
-                </a>
-                <a href='#'>
-                  <i className='fab fa-linkedin-in'></i>
-                </a>
-              </div>
-            </form>
+            <div className='topic'>Subscribe Us At</div>
+            <div className='media-icons'>
+              <a href='#'>
+                <i className='fab fa-facebook-f'></i>
+              </a>
+              <a href='#'>
+                <i className='fab fa-instagram'></i>
+              </a>
+              <a href='#'>
+                <i className='fab fa-twitter'></i>
+              </a>
+              <a href='#'>
+                <i className='fab fa-youtube'></i>
+              </a>
+              <a href='#'>
+                <i className='fab fa-linkedin-in'></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className='bottom'>
-          <p>
-            Copyright © 2020 <a href='#'>CodingLab</a> All rights reserved
-          </p>
         </div>
       </footer>
     </div>
